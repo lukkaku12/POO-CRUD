@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Reservas</h1>
+
+    <div id="register">
+      <h2>Registro de Usuarios</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <select id="role">
+        <option value="regular">Usuario Regular</option>
+        <option value="admin">Administrador</option>
+      </select>
+      <button onclick="registerUser()">Registrar</button>
+    </div>
+  
+    <div id="login">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Username">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button onclick="loginUser()">Login</button>
+    </div>
+  
+    <div id="reservation" style="display:none;">
+      <h2>Crear Reserva</h2>
+      <input type="text" id="details" placeholder="Detalles de la Reserva">
+      <button onclick="createReservation()">Crear Reserva</button>
+    </div>
+    <script src="crud.js"></script>
+</body>
+</html>
